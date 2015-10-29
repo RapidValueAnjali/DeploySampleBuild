@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<script src="resources/js/script.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.sb-search-submit').click(function (e) {
+            $('.search_container').fadeIn('slow');
+        });
+
+        $('#close-bar').click(function (e) {
+            $('.search_container').fadeOut('slow');
+
+        });
+
+    });
+
+</script>
+<div id="dashboard">
+    <section class="content-wrapper">
+        <div class="sidebar-wrap">
+            <aside class="sidebar">
+                <h1 id="site-logo"><a href="#">SBG</a></h1>
+                <div class="User-captch">
+                    <span class="user">
+                        <img src="resources/images/user.jpg" alt="User"/>
+                    </span>
+                    <a href="#">Enrique Lowe <em>Admin User</em></a>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#0"><i class="menu-icon ic_dashboard"></i><span>Dashboard</span></a></li>
+                    <li><a href="#1"><i class="menu-icon ic_contract"></i><span>Contract <br/>Management</span></a></li>
+                    <li><a href="#2"><i class="menu-icon ic_schedule"></i><span>Scheduling</span></a></li>
+                    <li><a href="#3"><i class="menu-icon ic_financial"></i><span>Financial <br/>Worksheets</span></a></li>
+                    <li><a href="#4"><i class="menu-icon ic_modules"></i><span>Forecasting <br/>Modules</span></a></li>
+                    <li><a href="#5"><i class="menu-icon ic_report"></i><span>Reports</span></a></li>
+                    <li><a href="#6"><i class="menu-icon ic_admin"></i><span>System </br/>Administrator</span></a></li>
+                </ul>
+            </aside>
+        </div> <!-- .sidebar-wrap -->
+        <div class="main-container">
+            <div class="top-navbar">
+                <div clasiv class="page-header clearfix">
+                    <div class="title-container">
+                        <div class="col-50 pull-left">
+                            <div class="hamburger-container" id="NavToggleButton">
+                                <span class="hamberger-menu"></span>
+                            </div>
+                            <!-- .hamburger-container -->
+                            <h2 id="">PALAS - Programming Asset & Liability Administration & Scheduling System </h2 >
+                        </div>
+                        <div class="col-50 pull-right">
+                            <div class="page-header-right-blocks">
+
+
+                                <div class="date_wrapper pull-right">
+                                    <div class="date-container clearfix">
+                                        <span class="User-pic">
+                                            <img src="resources/images/user.jpg">
+                                        </span>
+                                        <span class="date">Enrique<strong>Homes</strong></span>
+                                    </div><!-- .date-container -->
+                                    <ul class="date-dropdown">
+                                        <li><a href="#" class="ic-logout">LogOut</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="notification pull-right">
+                                    <a href="#" class="ic-notification"><i>Notification</i></a>
+                                </div>
+                                <div class="search-pane pull-right">
+                                    <div id="sb-search" class="sb-search">
+                                        <span class="sb-search-submit"></span>
+                                    </div>
+                                    <div class="search_container" style="display:none;"> 
+                                        <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                                        <span id="close-bar">X</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="dp-box pull-left">
+                                    <div id="db-selector" class="date-container">
+                                        <span class="date"><h6>Selected Database: &nbsp;</h6> PALAS</span>
+                                    </div><!-- .date-container -->
+                                    <ul class="date-dropdown" tabindex="5001" style="overflow: hidden; outline: none;">
+                                        <li><a href="#">PALAS 1</a></li>
+                                        <li><a href="#">PALAS 2</a></li>
+                                        <li><a href="#">PALAS 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div> <!-- .title-container -->
+
+                    </div>
+                </div><!-- .header-right-blocks -->
+            </div><!-- .top-navbar -->
+            <div class="main-content">
+                <div class="head-crump">
+                    <h2> Dashboard</h2>
+                    <ul class="bread-crump">
+                        <li><a href="#">Home</a> /</li>
+                        <li>Dashboard</li>
+                    </ul>
+                </div>
+
+
+                <!--Row with two equal columns-->
+                <div class="rows clearfix">
+                    <div class="col-sm width-48 pull-left cont-box">
+                        <div class="demo-content">
+                            <h3>General Messages</h3>
+                            <ul class="default-list">
+                                <li>
+                                    <label>
+                                        <span class="date">12:42 PM</span>
+                                        lorem ipsum is imply dummy text of the printing and typesetting industry. Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="date">Yesterday</span>
+                                        lorem ipsum is imply dummy text of the printing and typesetting industry. Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="date">Yesterday</span>
+                                        lorem ipsum is imply dummy text of the printing and typesetting industry. Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm width-48 pull-right cont-box">
+                        <div class="demo-content">
+                            <h3>Contract Messages</h3>
+                            <ul class="default-list">
+                                <li>
+                                    <label>
+                                        <span class="head-title">Station 1</span>
+                                        <span class="date">12:42 PM</span>
+                                        Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="head-title">Station 2</span>
+                                        <span class="date">Yesterday</span>
+                                        Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="head-title">Station 3</span>
+                                        <span class="date">Yesterday</span>
+                                        Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="rows clearfix">
+                    <div class="col-sm width-48 pull-left cont-box">
+                        <div class="demo-content">
+                            <h3>Financial Messages</h3>
+                            <ul class="default-list">
+                                <li>
+                                    <label>
+                                        <span class="date">12:42 PM</span>
+                                        lorem ipsum is imply dummy text of the printing and typesetting industry. Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="date">Yesterday</span>
+                                        lorem ipsum is imply dummy text of the printing and typesetting industry. Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="date">Yesterday</span>
+                                        lorem ipsum is imply dummy text of the printing and typesetting industry. Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm width-48 pull-right cont-box">
+                        <div class="demo-content">
+                            <h3>Schedule Messages</h3>
+                            <ul class="default-list">
+                                <li>
+                                    <label>
+                                        <span class="head-title">Station 1</span>
+                                        <span class="date">12:42 PM</span>
+                                        Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="head-title">Station 2</span>
+                                        <span class="date">Yesterday</span>
+                                        Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="head-title">Station 3</span>
+                                        <span class="date">Yesterday</span>
+                                        Lorem ispum has been
+                                        the industry's standard dummy text ever sice the 1500's when an unknown....
+                                    </label></lable>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- .main-content -->
+            </div> <!-- .main-container -->
+    </section><!-- .content-wrapper -->
+</div>

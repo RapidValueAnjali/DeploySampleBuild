@@ -1,0 +1,64 @@
+.model-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 9;
+}
+.model_dialog{
+    @include box-sizing (border-box);
+    padding: 30px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    @include transform (translate(-50%, -50%));
+    z-index: 9;
+    .dailog-title{
+        color: #313335;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+.mail_dialog{
+    width: 700px;
+    .input_textbox{
+        margin-bottom: 10px;
+    }
+    a.cc-link{
+        display: block;
+        position: absolute;
+        text-decoration: none;
+        padding: 5px 8px;
+        color: #FFF;
+        font-size: 10px;
+        font-family: 'Arial';
+        text-transform: uppercase;
+        background: #d3d3d3;
+        top: 7px; 
+        right: 10px;
+        &:hover{
+            background: #aaa;
+        }
+    }
+    
+    .attach{
+        text-decoration: none;
+        color: #86888a;
+        font-size: 14px;
+        font-family: 'Arial';
+        
+        i.ic-attach{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            font-size: 20px;
+            &:after{
+                display: block;
+                content: '\2656';
+            }
+        }
+    }
+}

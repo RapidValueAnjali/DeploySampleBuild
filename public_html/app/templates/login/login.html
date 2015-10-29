@@ -1,0 +1,31 @@
+<div id="login">
+    <div class="wrapper">
+        <section class="login-container text-center">
+            <h1><a href="#">SBG</a></h1>
+            <form class="form-horizontal clearfix" role="form">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="email" placeholder="Username" ng-model = "username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12"> 
+                        <input type="password" class="form-control" id="pwd" placeholder="Password" ng-model = "password">
+                    </div>
+                </div>
+                <div class="form-group text-left"> 
+                    <div class="col-sm-12">
+                        <div class="checkbox mrg-btm-15">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group"> 
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-default width-100" ng-click="logIn()">Login</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

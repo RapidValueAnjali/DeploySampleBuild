@@ -1,0 +1,17 @@
+@mixin bobs-burgers {
+  @if $brand == 'Theme_01' {
+    @content;
+  }
+}
+
+@mixin paddys-pub {
+  @if $brand == 'Theme_02' {
+    @content;
+  }
+}
+
+@mixin stus-stews {
+  @if $brand == 'Theme_03' {
+    @content;
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "angular",
+        "smells"
+    ],
+    "globals": {
+        "angular": true,
+        "jQuery": true
+    },
+    "rules": {
+        "no-use-before-define": [2, "nofunc"],
+        "no-debugger":1,
+        "camelcase": 2,
+        "no-undef": 2,
+        "semi": [2, "always"],
+        "curly": 2,
+        "max-statements": [2, 15],
+        "max-depth": [2, 4],
+        "complexity": [2, 10],
+        "max-len": [2, 120],
+        "no-loop-func": 2,
+        "no-eq-null": 2,
+        "no-dupe-keys": 2,
+        "no-duplicate-case": 2,
+        "block-scoped-var": 2,
+        "accessor-pairs": 2,
+        "consistent-return": 2,
+        "no-extra-bind": 2,
+        "no-shadow": 2,
+        "no-delete-var": 2,
+        "no-shadow-restricted-names": 2,
+        "comma-dangle": [2, "never"],
+        "brace-style": [2, "1tbs"],
+        "require-jsdoc": 1,
+        "quotes": [2, "single"],
+        "semi": [2, "always"],
+        "space-infix-ops": 2,
+        "no-multiple-empty-lines": [2, {"max": 2}],
+        "newline-after-var": [2, "always"],
+        "angular/controller-name": [2, "/[A-Z].*Controller$/"],
+        "angular/service-name": [2, "/[a-z].*Service/"],
+        "angular/di": [2, "array"],
+        "smells/no-switch": 1,
+        "smells/no-complex-switch-case": 2,
+        "smells/no-setinterval": 1,
+        "smells/no-this-assign": 1,
+        "smells/no-complex-string-concat": 2
+    }
+}
